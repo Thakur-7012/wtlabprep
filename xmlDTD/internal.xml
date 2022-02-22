@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE book[
+
+<!ELEMENT book (title,author,ISBN,publisher,edition,price)>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT author (#PCDATA)>
+
+<!ELEMENT ISBN (#PCDATA)>
+
+<!ELEMENT publisher (#PCDATA)>
+
+<!ELEMENT edition (#PCDATA)>
+
+<!ELEMENT price (#PCDATA)>
+
+]>
+
+<book>
+
+<title>web programming</title>
+
+<author>chrisbates</author>
+
+<ISBN>123-456-789</ISBN>
+
+<publisher>wiley</publisher>
+
+<edition>3</edition><price>350</price>
+
+</book>

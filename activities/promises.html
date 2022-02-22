@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h1>
+
+        javascript
+
+    </h1>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunc(x) {
+
+            return new Promise(function (myResolve, myReject) {
+
+                if (x === 0) myReject("error");
+
+                else myResolve("ok");
+
+            });
+
+        }
+
+        myFunc(1).then(function (value) {
+
+                console.log(value);
+
+            })
+
+            .catch(function (error) {
+
+                console.log(error);
+
+            })
+
+        async function f1() {
+
+            try {
+
+                var value = await myFunc(0);
+
+                console.log(value);
+
+            } catch (error) {
+
+                console.log(error);
+
+            }
+
+        }
+
+        f1();
+    </script>
+
+</body>
+
+</html>

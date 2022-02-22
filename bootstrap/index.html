@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>advanced</title>
+
+    <style>
+        body {
+
+            background-color: teal;
+
+        }
+
+        .container {
+
+            padding: 10px;
+
+            background-color: gray;
+
+            text-align: center;
+
+            display: flex;
+
+            flex-direction: column;
+
+            font-family: cursive;
+
+        }
+
+        .header {
+
+            background-color: rgb(113, 206, 25, 0.473);
+
+            text-align: center;
+
+        }
+
+        .content {
+
+            padding: 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .heading {
+
+            font-size: 20px;
+
+            margin: 5px;
+
+            text-decoration: underline;
+
+        }
+
+        .link {
+
+            width: 100%;
+
+            display: flex;
+
+            justify-content: space-around;
+
+            margin: 25px;
+
+        }
+
+        a {
+
+            width: 20px;
+
+            border: 2px solid blueviolet;
+
+            padding: 30px;
+
+            color: darkred;
+
+            background-color: pink;
+
+            transition-duration: 3s;
+
+            transition-delay: 0.5s;
+
+        }
+
+        .footer {
+            margin: 10px;
+
+            background-color: beige;
+
+            padding: 10px;
+
+        }
+
+        a:hover {
+
+            transform: rotate(180deg);
+
+            
+
+        }
+
+        .square {
+
+            width: 100px;
+
+            height: 100px;
+
+            background-color: red;
+
+            transition: width 3s, height 3s;
+
+        }
+
+        .square:hover {
+
+            height: 200px;
+
+            width: 300px;
+
+        }
+
+        @media only screen and(max-width: 600px) {
+
+            .links {
+
+                flex-direction: column;
+
+            }
+
+            .header {
+
+                background-color: lightseagreen;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="header-container">
+
+            <h1>this is the header</h1>
+
+        </div>
+
+        <div class="content-container">
+
+            <div class="heading">
+
+                this is the heading
+
+            </div>
+
+            <br><br>
+
+            <div class="links container-fluid">
+
+                <a class="" href="#">link1</a>
+
+                <a href="#">link2</a>
+
+                <a href="#">link3</a>
+
+            </div>
+
+            <br><br>
+
+            <div class="square">
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            this is the footer
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
